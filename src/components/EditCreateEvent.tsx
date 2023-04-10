@@ -124,7 +124,7 @@ const EditCreateEvent: FC<EditCreateEventProps> = ({
     //if new event add to events array and return//
     if (newEvent) {
       setEvents([...events, newEventData]);
-      localStorage.setItem("events", JSON.stringify([...events, newEvent]));
+      localStorage.setItem("events", JSON.stringify([...events, newEventData]));
       setIsEditModalOpen(false);
       return;
     }
