@@ -215,6 +215,7 @@ const EditCreateEvent: FC<EditCreateEventProps> = ({
                 onChange={(date) => setStartDate(date?.toDate() ?? null)}
                 value={startDate ? dayjs(startDate) : undefined}
                 className="date-picker"
+                inputReadOnly={true}
               />
             </Form.Item>
             {!allDay && (
@@ -230,6 +231,7 @@ const EditCreateEvent: FC<EditCreateEventProps> = ({
                   value={startTime ? dayjs(startTime) : undefined}
                   format={"HH:mm"}
                   className="time-picker"
+                  inputReadOnly={true}
                 />
               </Form.Item>
             )}
@@ -246,6 +248,7 @@ const EditCreateEvent: FC<EditCreateEventProps> = ({
                 onChange={(date) => setEndDate(date?.toDate() ?? null)}
                 value={endDate ? dayjs(endDate) : undefined}
                 className="date-picker"
+                inputReadOnly={true}
                 //disable dates before start date//
                 disabledDate={(current) =>
                   current && current < dayjs(startDate).startOf("day")
@@ -263,6 +266,7 @@ const EditCreateEvent: FC<EditCreateEventProps> = ({
                   value={endTime ? dayjs(endTime) : undefined}
                   format={"HH:mm"}
                   className="time-picker"
+                  inputReadOnly={true}
                 />
               </Form.Item>
             )}
