@@ -1,0 +1,228 @@
+/*Typography*/
+html {
+  font-family: "apple-system", BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+/*Form*/
+.date-picker {
+  width: 60%;
+}
+
+.time-picker {
+  width: 40%;
+}
+
+.submit-btn {
+  float: right;
+  margin: 10px 0px -30px 10px;
+}
+
+.create-event-form {
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.date-time-wrapper {
+  width: 100%;
+}
+
+/*Full Calendar*/
+.calendar-wrapper {
+  position: fixed;
+  top: 3%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1152px;
+  margin: auto;
+}
+
+.fc-more-popover {
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.fc .fc-timegrid-slot-minor {
+  border: none;
+}
+
+/*Colors*/
+:root {
+  --fc-daygrid-event-dot-width: 10px;
+  --fc-today-bg-color: #ffd2d4;
+  --fc-button-hover-bg-color: none;
+  --fc-button-hover-border-color: none;
+  --fc-button-active-bg-color: none;
+  --fc-button-active-border-color: white;
+  --fc-button-bg-color: white;
+  --fc-button-border-color: white;
+}
+
+/*Header*/
+th {
+  font-weight: 500;
+}
+
+.fc th {
+  text-align: right;
+  border: none;
+  background-color: white;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: none;
+}
+
+.fc .fc-scrollgrid-section * {
+  border-left-width: thin;
+  border-top-width: thin;
+}
+
+.fc table {
+  border-radius: 6px;
+}
+
+/*Footer*/
+
+.fc .fc-toolbar.fc-footer-toolbar {
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*Days*/
+
+.fc-day-sun {
+  background-color: #edf1f7;
+  color: rgb(60, 61, 75);
+}
+
+.fc-day-sat {
+  background-color: #edf1f7;
+  color: rgb(60, 61, 75);
+}
+
+.fc-day-today {
+  color: #e0282e;
+  font-weight: 600;
+}
+
+/*Events*/
+
+.fc-event {
+  border-radius: 6px;
+  padding: 2px;
+  margin: 1px;
+  font-weight: 400;
+  border: none;
+}
+
+/*Primary buttons*/
+
+.fc .fc-button-primary {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  color: black;
+  border-radius: 6px;
+  box-shadow: none !important;
+}
+
+.fc .fc-button-primary:hover {
+  color: #1677ff;
+}
+
+.fc .fc-button-primary:disabled {
+  background-color: white;
+  color: #1677ff;
+  opacity: 0.5;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  border: 1px solid #1677ff;
+  background-color: white;
+  color: #1677ff;
+}
+
+/*Prev Next Today buttons*/
+
+.fc .fc-prev-button,
+.fc .fc-next-button,
+.fc .fc-today-button {
+  border: none;
+  background-color: white;
+  color: #1677ff;
+}
+
+.fc .fc-prev-button:hover,
+.fc .fc-next-button:hover,
+.fc .fc-today-button:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s linear;
+}
+
+/*Add event button*/
+
+.fc .fc-myCustomButton-button {
+  border: none;
+  background-color: #1677ff;
+  color: white;
+}
+
+.fc .fc-myCustomButton-button:hover {
+  border: none;
+  background-color: #1677ff;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.2s linear;
+}
+
+/*Timegrid switch buttons*/
+
+.fc .fc-timeGridWeek-button,
+.fc .fc-dayGridMonth-button {
+  color: black;
+}
+
+.fc .fc-timeGridWeek-button:hover,
+.fc .fc-dayGridMonth-button:hover {
+  color: #1677ff;
+  transition: color 0.3s linear;
+}
+
+/*Ant Design*/
+
+.ant-list .ant-list-item .ant-list-item-meta {
+  align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  .create-event-form {
+    margin-top: 10px;
+    padding-right: 0px;
+  }
+
+  .ant-form-item .ant-form-item-label {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+
+  .fc table {
+    font-size: 12px;
+  }
+
+  .calendar-wrapper {
+    top: 1%;
+    bottom: 1%;
+  }
+
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-left: 1rem;
+  }
+}
