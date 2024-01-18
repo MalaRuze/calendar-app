@@ -1,3 +1,5 @@
+This project was developed under a tight deadline as part of a job interview process.
+
 # Calendar App
 Simple calendar app for schedule management with monthly and weekly view. App is deployed here: https://calendar-app-dnpy.onrender.com/.
 
